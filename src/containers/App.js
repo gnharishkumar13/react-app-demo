@@ -30,10 +30,11 @@ class App extends React.Component {
     }
 
     render() {
-        const filteredData = this.state.data.filter(d => {
-            return d.name.toLowerCase().includes(this.state.searchField.toLowerCase())
+        const {data, searchField} = this.state; //destructuring
+        const filteredData = data.filter(d => {
+            return d.name.toLowerCase().includes(searchField.toLowerCase())
         })
-        if (this.state.data.length === 0) {
+        if (!data.length) {
             return <h1> Loading ..</h1>
         } else {
             return (
