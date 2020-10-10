@@ -10,7 +10,7 @@ class CardList extends Component {
             )
         })
         return (
-            <div>    {cardComponent}</div>
+            <div>{cardComponent}</div>
 
         )
     }

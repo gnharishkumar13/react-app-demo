@@ -8,7 +8,6 @@ const Card = ({id, email, name }) => {
             <div>
                 <p>{name}</p>
                 <p>{email}</p>
-
             </div>
         </div>
     );
